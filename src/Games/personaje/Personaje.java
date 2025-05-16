@@ -2,7 +2,7 @@ package Games.personaje;
 
 import Games.ataque.IAtaque;
 
-public class Personaje {
+public abstract class Personaje {
     private String nombre;
     private int puntosDeVida = 100;
     private IAtaque estrategiaAtaque;
@@ -36,4 +36,6 @@ public class Personaje {
     public void setAtaque(IAtaque nuevoAtaque) {
         this.estrategiaAtaque = nuevoAtaque;
     }
+
+    public abstract Personaje crearPersonaje(String nombre);
 }

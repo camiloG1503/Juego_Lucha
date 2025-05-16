@@ -3,9 +3,13 @@ package Games.factory;
 import Games.ataque.AtaqueCombo;
 import Games.personaje.Personaje;
 
-public class ShunlimeiFactory implements PersonajeFactory{
+public class Shunlimei extends Personaje{
+    public Shunlimei(String nombre) {
+        super(nombre, new AtaqueCombo());
+    }
+
     @Override
     public Personaje crearPersonaje(String nombre) {
-        return new Personaje(nombre, new AtaqueCombo());
+        return new Shunlimei(nombre);
     }
 }
