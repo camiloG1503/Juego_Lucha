@@ -4,7 +4,7 @@ import Games.personaje.Personaje;
 
 import java.util.Random;
 
-public class AtaqueMagico implements IAtaque {
+public class AtaqueCombo implements IAtaque {
     @Override
     public void ejecutar(Personaje atacante, Personaje oponente) {
         int dano = new Random().nextInt(21) + 10; // 10–30
