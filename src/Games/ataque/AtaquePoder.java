@@ -4,11 +4,11 @@ import Games.personaje.Personaje;
 
 import java.util.Random;
 
-public class AtaqueMagico implements IAtaque {
+public class AtaquePoder implements IAtaque {
     @Override
     public void ejecutar(Personaje atacante, Personaje oponente) {
         int dano = new Random().nextInt(16) + 15; // 15–30
         oponente.recibirDano(dano);
-        System.out.println(atacante.getNombre() + " lanza hechizo causando " + dano + " puntos de daño.");
+        System.out.println(atacante.getNombre() + " lanza un haduken causando " + dano + " puntos de daño.");
     }
 }

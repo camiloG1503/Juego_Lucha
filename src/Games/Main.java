@@ -1,9 +1,8 @@
 package Games;
 
-import Games.ataque.AtaqueEspada;
 import Games.core.JuegoLucha;
-import Games.factory.GuerreroFactory;
-import Games.factory.MagoFactory;
+import Games.factory.KenFactory;
+import Games.factory.RyuFactory;
 import Games.factory.PersonajeFactory;
 import Games.observer.CombateLogger;
 import Games.personaje.Personaje;
@@ -21,8 +20,8 @@ public class Main {
         String nombre2 = sc.nextLine();
 
         // Aquí decides qué tipo de personaje crear por jugador
-        PersonajeFactory factory1 = new GuerreroFactory();
-        PersonajeFactory factory2 = new MagoFactory();
+        PersonajeFactory factory1 = new RyuFactory();
+        PersonajeFactory factory2 = new KenFactory();
 
         Personaje jugador1 = factory1.crearPersonaje(nombre1);
         Personaje jugador2 = factory2.crearPersonaje(nombre2);
